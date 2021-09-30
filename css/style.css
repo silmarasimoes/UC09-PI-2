@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body{
+    overflow-x: hidden;
+}
+.color-header{
+    background:  #F03F88;
+}
+.color-menu{
+    background: rgb(148, 147, 147);
+}
+.navbar-nav {
+    font-weight: 900;
+    margin-left: 25%;
+}
+.video-index{
+    width: 100%;
+    height: 330px;
+    position: relative;
+}
+.text-fluxo{
+    position: relative;
+    height: 100%;
+}
+.img-fluxo{
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+.google{
+    width: 100%;
+    position: relative;
+    bottom: 28px;
+}
+.teste-gratis{
+    border: solid 6px #F03F88;
+    height: 115px;
+    border-radius: 20px;
+    background:  #BFBFBF;
+}
+.teste-gratis>p{
+    color: wheat;
+    font-size: 20pt;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    top: 25px;
+}
+.instagram{
+    width: 115px;
+    height: 115px;
+}
+.dancepro{
+    font-size: 28pt;
+    position: relative;
+    left: 131px;
+    bottom: 89px;
+}
+.apple{
+    width: 87%;
+    height: 110px;
+    position: relative;
+    left: 28px;
+}
+.qrcode{
+    width: 33%;
+    height: 111px;
+}
+.pix{
+    position: relative;
+    font-size: 41pt;
+    font-weight: 900;
+    left: 139px;
+    bottom: 102px;
+}
+.facebook{
+    width: 100px;
+    position: relative;
+    left: 8px;
+}
+.facepro{
+    position: relative;
+    left: 132px;
+    bottom: 74px;
+    font-size: 26pt;
+}
+.rodape{
+    width: 100%;
+    background: #BFBFBF;
+    height: 100%;
+}
+.link{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20pt;
+    color:  #F03F88;
+}
+.link:hover{
+    color: black;
+}.menu-rodape{
+    margin-top: 20px;
+}
+.suporte{
+    position: relative;
+    left: 30px;
+    color: black;
+    font-weight: 500;
+}
+.grid-imgs{
+    position: relative;
+    top: 30px;
+}
+.width-row{
+    width: 100%;
+}
+.btn-width{
+    width: 100%;
+}
+.apoiadores{
+    margin-top: 50px;
+}
+
+/*modal*/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 25%;
+    width: 50%;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #BFBFBF;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #BFBFBF;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+.logotipo{
+    position: fixed;
+    width: 117px;
+    z-index: 1;
+}
+
+button.navbar-toggler {
+    position: relative;
+    left: 91%;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <title>Contato</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light color-header">
+    <div class="container-fluid">
+      <div class="row width-row">
+        <div class="col-md-4">
+          <a class="navbar-brand" href="#">
+            <img src="media/LOGOok.png" alt="" class="d-inline-block align-text-top logotipo">
+
+          </a>
+        </div>
+        <div class="col-md-4">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="O que deseja procurar?" aria-label="Search">
+            <button class="btn bg-dark" style="color:white" type="submit">Pesquisar</button>
+          </form>
+        </div>
+        <div class="col-md-4"><a class="btn btn-primary btn-width" href="login.html" role="button">Acessar Conta</a></div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light color-menu">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!---->
+  <style type="text/css">
+		input[type='text']{
+			color: red;
+		}
+ 
+		#mensagem{
+			color: red;
+		}
+	</style>
+  <section>
+    <div class='container'>
+      <br>
+      <fieldset>
+        <legend><h1>Envie o seu contato</h1></legend>
+        
+        <form id='form-contato'>		    
+   
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                 <label>Nome</label>
+                 <input type="text" class="form-control pula" id="nome" maxlength="100" name="cep" placeholder="Nome Completo" required>
+             </div>
+           </div>
+           <div class="col-md-4">
+            <div class="form-group">
+               <label>Telefone</label>
+               <input type="tel" class="form-control pula" id="nome" maxlength="12" name="cep" placeholder="Telefone Contato" required>
+           </div>
+         </div>
+         <div class="col-md-4">
+          <div class="form-group">
+             <label>CPF</label>
+             <input type="number" class="form-control pula" id="cpf" maxlength="14" name="cep" placeholder="Informe CPF" required>
+         </div>
+       </div>
+              <div class="col-md-2">
+                 <div class="form-group">
+                    <label>CEP</label>
+                    <input type="text" class="form-control pula" id="cep" maxlength="12" name="cep" placeholder="Informe o CEP">
+                </div>
+              </div>
+              <div class="col-md-8">
+               <div class="form-group">
+                   <label>Rua, Logradouro, Travessa <span>*</span> <span id='mensagem'></span></label>
+                     <input type="text" class="form-control pula" id="rua" name="rua" placeholder="Informe a Rua, Logradouro, Travessa" required>
+                </div>
+              </div>
+              <div class="col-md-2">
+               <div class="form-group">
+                   <label>Número</label>
+                     <input type="text" class="form-control pula" id="numero" name="numero" placeholder="Informe o Número">
+                </div>
+              </div>
+            </div>	
+   
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                    <label>Bairro</label>
+                    <input type="text" class="form-control pula" id="bairro" name="bairro" placeholder="Informe o Bairro">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                   <label>Cidade</label>
+                    <input type="text" class="form-control pula" id="cidade" name="cidade" placeholder="Informe a Cidade">
+                </div>
+              </div>
+              <div class="col-md-1">
+               <div class="form-group">
+                    <label>UF</label>
+                    <input type="text" class="form-control pula" id="uf" maxlength="2" name="uf" placeholder="UF">
+                </div>
+              </div>
+              <div class="col-md-5">
+               <div class="form-group">
+                    <label>Complemento</label>
+                    <input type="text" class="form-control pula" id="complemento" name="complemento" placeholder="Informe o Complemento do Endereço">
+                </div>
+              </div>
+            </div>
+   
+            <button type="submit" class="btn btn-primary" id='botao'> 
+              <i class="fa fa-floppy-o"></i> Enviar
+            </button>
+        </form>
+      </fieldset>
+    </div>
+  </section>
+  <!---->
+  <footer class="rodape">
+    <div class="container">
+      <div class="menu-rodape">
+        <div class="row">
+          <div class="col-md-2"><a class="link" href="#">HOME</a></div>
+          <div class="col-md-3"><a class="link" href="#">QUEM SOMOS</a></div>
+          <div class="col-md-2"><a class="link" href="#">PRODUTOS</a></div>
+          <div class="col-md-2"><a class="link" href="#">CONTATO</a></div>
+          <div class="col-md-3"><a class="link" href="#">SUPORTE</a></div>
+        </div>
+      </div>
+      <div class="apoiadores">
+        <div class="row ">
+          <div class="col-md-2"><img src="media/Capezio.png" class="apoio1"></div>
+          <div class="col-md-2"><img src="media/Dance studio.png" class="apoio2"></div>
+          <div class="col-md-2"><img src="media/bloch.png" class="apoio3"></div>
+          <div class="col-md-3"><img src="media/dancaDk.png" class="apoio4"></div>
+          <div class="col-md-3">
+            <div class="row suporte">
+              <div class="col-md-12">Precisa de Suporte</div>
+              <div class="col-md-12">Fale Conosco</div>
+              <div class="col-md-12">Chat Online</div>
+              <div class="col-md-12">Suporte</div>
+              <div class="col-md-12">E-mail</div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h5 class="text-center" style="overflow-y: hidden;">São Paulo / SP Brsil <br>
+          CNPJ: 01.002.123/0001 10 <br>
+          Copyright@2021 Dance Pro Todo conteúdo deste site é exclusivo da Dance Pro. Proibida a reprodução ou
+          utilização a qualquer título.
+        </h5>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+ 
+ // Método para pular campos teclando ENTER
+   $('.pula').on('keypress', function(e){
+       var tecla = (e.keyCode?e.keyCode:e.which);
+
+       if(tecla == 13){
+           campo = $('.pula');
+           indice = campo.index(this);
+
+           if(campo[indice+1] != null){
+               proximo = campo[indice + 1];
+               proximo.focus();
+               e.preventDefault(e);
+           }
+       }
+   });
+
+    // Inseri máscara no CEP
+   $("#cep").inputmask({
+       mask: ["99999-999",],
+       keepStatic: true
+   });
+
+    // Método para consultar o CEP
+ $('#cep').on('blur', function(){
+
+   if($.trim($("#cep").val()) != ""){
+
+     $("#mensagem").html('(Aguarde, consultando CEP ...)');
+     $.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+$("#cep").val(), function(){
+
+         if(resultadoCEP["resultado"]){
+         $("#rua").val(unescape(resultadoCEP["tipo_logradouro"])+" "+unescape(resultadoCEP["logradouro"]));
+         $("#bairro").val(unescape(resultadoCEP["bairro"]));
+         $("#cidade").val(unescape(resultadoCEP["cidade"]));
+         $("#uf").val(unescape(resultadoCEP["uf"]));
+       }
+
+       $("#mensagem").html('');
+     });				
+   }			
+ });
+});	
+$(function()
+{
+    //Executa a requisição quando o campo username perder o foco
+    $('#cpf').blur(function()
+    {
+        var cpf = $('#cpf').val().replace(/[^0-9]/g, '').toString();
+
+        if( cpf.length == 11 )
+        {
+            var v = [];
+
+            //Calcula o primeiro dígito de verificação.
+            v[0] = 1 * cpf[0] + 2 * cpf[1] + 3 * cpf[2];
+            v[0] += 4 * cpf[3] + 5 * cpf[4] + 6 * cpf[5];
+            v[0] += 7 * cpf[6] + 8 * cpf[7] + 9 * cpf[8];
+            v[0] = v[0] % 11;
+            v[0] = v[0] % 10;
+
+            //Calcula o segundo dígito de verificação.
+            v[1] = 1 * cpf[1] + 2 * cpf[2] + 3 * cpf[3];
+            v[1] += 4 * cpf[4] + 5 * cpf[5] + 6 * cpf[6];
+            v[1] += 7 * cpf[7] + 8 * cpf[8] + 9 * v[0];
+            v[1] = v[1] % 11;
+            v[1] = v[1] % 10;
+
+            //Retorna Verdadeiro se os dígitos de verificação são os esperados.
+            if ( (v[0] != cpf[9]) || (v[1] != cpf[10]) )
+            {
+                alert('CPF inválido: ' + cpf);
+
+                $('#cpf').val('');
+                $('#cpf').focus();
+            }
+        }
+        else
+        {
+            //alert('CPF inválido:' + cpf);
+
+            $('#cpf').val('');
+            $('#cpf').focus();
+        }
+    });
+});
+  </script>
+</body>
+
+</html>
